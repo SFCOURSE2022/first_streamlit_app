@@ -69,7 +69,7 @@ streamlit.text(my_data_row)
 
 my_cur.execute("select * from fruit_load_list")
 my_data_row = my_cur.fetchone()
-streamlit.text("Fruit list:")
-streamlit.text(my_data_row)
+streamlit.header("Fruit list:")
+streamlit.dataframe(my_data_row)
 
 
